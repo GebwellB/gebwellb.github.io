@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a0d18">
-  <meta name="description" content="Gebwell's little corner of GitHub. Software developer, curious tinkerer, and enthusiastic producer of questionable commits.">
-  <title>Gebwell | Software Developer</title>
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="Gebwell's corner of the internet. Former software developer, now driving electric trains, still making questionable commits.">
+  <title>Gebwell | Electric Train Driver</title>
   <style>
     :root {
       color-scheme: dark;
-      --background: #0a0d18;
-      --surface: rgba(18, 24, 42, 0.82);
-      --surface-solid: #12182a;
-      --text: #f2f5ff;
-      --muted: #a0abc4;
-      --teal: #55f2d3;
-      --purple: #a78bfa;
-      --border: rgba(163, 180, 220,  0.16);
+      --background: #10100f;
+      --surface: rgba(31, 29, 25, 0.88);
+      --surface-solid: #1f1d19;
+      --text: #fff8ed;
+      --muted: #b8ad9c;
+      --teal: #ffb547;
+      --purple: #ff704d;
+      --border: rgba(255, 181, 71, 0.2);
     }
 
     * { box-sizing: border-box; }
@@ -27,8 +27,8 @@
       margin: 0;
       min-height: 100vh;
       background:
-        radial-gradient(ellipse at 12% 5%, rgba(80, 70, 190, 0.20), transparent 35rem),
-        radial-gradient(ellipse at 90% 28%, rgba(35, 205, 177, 0.11), transparent 32rem),
+        radial-gradient(ellipse at 12% 5%, rgba(255, 112, 77, 0.18), transparent 35rem),
+        radial-gradient(ellipse at 90% 28%, rgba(255, 181, 71, 0.13), transparent 32rem),
         var(--background);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -67,11 +67,11 @@
       place-items: center;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--teal), var(--purple));
-      color: #0a0d18;
+      color: #20150a;
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 19px;
       font-weight: 900;
-      box-shadow: 0 0 28px rgba(85, 242, 211, 0.15);
+      box-shadow: 0 0 28px rgba(255, 181, 71, 0.24);
     }
 
     .nav-links { display: flex; align-items: center; gap: 25px; color: var(--muted); font-size: 14px; }
@@ -92,9 +92,9 @@
       align-items: center;
       gap: 9px;
       padding: 7px 12px;
-      border: 1px solid rgba(85, 242, 211, 0.25);
+      border: 1px solid rgba(255, 181, 71, 0.32);
       border-radius: 999px;
-      background: rgba(85, 242, 211, 0.06);
+      background: rgba(255, 181, 71, 0.08);
       color: var(--teal);
       font-size: 12px;
       font-weight: 750;
@@ -118,7 +118,7 @@
     }
 
     .gradient-text {
-      background: linear-gradient(100deg, var(--teal) 5%, #b4a1ff 85%);
+      background: linear-gradient(100deg, #ffb547 5%, #ff704d 85%);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -149,9 +149,9 @@
       transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
     }
 
-    .button:hover { transform: translateY(-2px); border-color: rgba(85, 242, 211, 0.55); }
-    .button-primary { border-color: transparent; background: var(--teal); color: #071311; }
-    .button-primary:hover { background: #8bffe8; }
+    .button:hover { transform: translateY(-2px); border-color: rgba(255, 181, 71, 0.65); }
+    .button-primary { border-color: transparent; background: linear-gradient(110deg, var(--teal), var(--purple)); color: #20150a; }
+    .button-primary:hover { background: #ffd08a; }
     .button-secondary { background: rgba(255,255,255,0.025); }
 
     .terminal-wrap { position: relative; }
@@ -167,9 +167,9 @@
 
     .terminal {
       overflow: hidden;
-      border: 1px solid rgba(163, 180, 220, 0.2);
+      border: 1px solid rgba(255, 181, 71, 0.28);
       border-radius: 18px;
-      background: rgba(12, 16, 29, 0.88);
+      background: rgba(24, 20, 16, 0.94);
       box-shadow: 0 28px 90px rgba(0, 0, 0, 0.25);
       transform: rotate(1.5deg);
     }
@@ -216,12 +216,12 @@
       padding: 23px;
       border: 1px solid var(--border);
       border-radius: 17px;
-      background: linear-gradient(145deg, rgba(24, 32, 54, 0.8), rgba(14, 19, 34, 0.7));
+      background: linear-gradient(145deg, rgba(48, 37, 25, 0.86), rgba(22, 21, 19, 0.82));
       transition: border-color 180ms ease, transform 180ms ease;
     }
 
-    .info-card:hover { transform: translateY(-4px); border-color: rgba(167, 139, 250, 0.45); }
-    .card-icon { display: grid; width: 39px; height: 39px; place-items: center; margin-bottom: 19px; border: 1px solid rgba(167, 139, 250, 0.22); border-radius: 12px; background: rgba(167, 139, 250, 0.09); color: var(--purple); font-size: 19px; }
+    .info-card:hover { transform: translateY(-4px); border-color: rgba(255, 181, 71, 0.55); }
+    .card-icon { display: grid; width: 39px; height: 39px; place-items: center; margin-bottom: 19px; border: 1px solid rgba(255, 181, 71, 0.3); border-radius: 12px; background: rgba(255, 181, 71, 0.1); color: var(--teal); font-size: 19px; }
     .info-card h3 { margin: 0 0 6px; font-size: 15px; }
     .info-card p { margin: 0; color: var(--muted); font-size: 13px; }
     .info-card .highlight { color: var(--teal); }
@@ -234,7 +234,7 @@
       padding: 32px;
       border: 1px solid var(--border);
       border-radius: 20px;
-      background: linear-gradient(110deg, rgba(85, 242, 211, 0.07), rgba(167, 139, 250, 0.08));
+      background: linear-gradient(110deg, rgba(255, 181, 71, 0.11), rgba(255, 112, 77, 0.09));
     }
 
     .manifesto h2 { max-width: 330px; }
@@ -287,52 +287,52 @@
     <header class="topbar">
       <a class="brand" href="#top" aria-label="Gebwell home">
         <span class="brand-mark">g.</span>
-        <span>gebwell<span class="gradient-text">.dev</span></span>
+      <span>gebwell<span class="gradient-text">.ontrack</span></span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#profile">Profile</a>
         <a href="#philosophy">The philosophy</a>
-        <a href="https://github.com/gebwellb" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://github.com/GebwellB" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div>
-          <div class="eyebrow"><span class="status-dot"></span> Currently compiling something</div>
+          <div class="eyebrow"><span class="status-dot"></span> Career update · Now on the rails</div>
           <h1 id="hero-title">Hey, I'm<br><span class="gradient-text">Gebwell.</span></h1>
           <p class="hero-copy">
-            Software developer, lifelong tinkerer, and occasional menace to GitHub's commit history.
-            I like building things, figuring out how they work, and probably <strong>overcomplicating a perfectly simple solution</strong> along the way.
+            Former <strong>programmer</strong>. Now, <strong>train driver</strong>.
+            I swapped programming sessions for the driver's cab, but I'm still a lifelong tinkerer with a soft spot for tech.
           </p>
           <div class="actions">
-            <a class="button button-primary" href="https://github.com/gebwellb" target="_blank" rel="noopener noreferrer">⌘ &nbsp; Explore my GitHub <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="#profile">A little about me ↓</a>
+            <a class="button button-primary" href="#profile">🚆 &nbsp; The journey so far <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://github.com/GebwellB" target="_blank" rel="noopener noreferrer">⌘ &nbsp; My GitHub ↗</a>
           </div>
         </div>
 
-        <div class="terminal-wrap" aria-label="Decorative terminal showing a developer profile">
+        <div class="terminal-wrap" aria-label="Decorative train control display">
           <div class="terminal">
             <div class="terminal-bar">
               <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
-              <span class="terminal-title">gebwell@dev: ~</span>
+              <span class="terminal-title">gebwell@the-controls</span>
             </div>
             <div class="terminal-body">
-              <div class="comment">// a quick introduction</div>
-              <div><span class="prompt">$</span> whoami</div>
-              <div class="command">gebwell</div>
+              <div class="comment">// career status</div>
+              <div><span class="prompt">&gt;</span> current_role</div>
+              <div class="command">Drive Trains</div>
               <br>
-              <div><span class="prompt">$</span> cat role.txt</div>
+              <div><span class="prompt">&gt;</span> previous_role</div>
               <div class="value">Software Developer</div>
               <br>
-              <div><span class="prompt">$</span> git status</div>
-              <div>On branch <span class="command">main</span></div>
-              <div>Untracked ideas: <span class="value">far too many</span></div>
-              <div>Working tree: <span class="command">creatively chaotic</span></div>
+              <div><span class="prompt">&gt;</span> traction_system</div>
+              <div>Status: <span class="command">POWERED ON</span></div>
+              <div>Route: <span class="value">Next stop: who knows</span></div>
+              <div>Debugging: <span class="command">still a life skill</span></div>
               <br>
-              <div><span class="prompt">$</span> git commit -m <span class="value">"fixed a thing"</span></div>
-              <div class="comment">[main 0c0ffee] fixed a thing</div>
-              <div class="comment">1,024 commits to go today...</div>
+              <div><span class="prompt">&gt;</span> git status</div>
+              <div>Old habits: <span class="value">still committing</span></div>
+              <div class="comment">Please stand clear of the commit history.</div>
               <div><span class="command">▌</span></div>
             </div>
           </div>
@@ -345,24 +345,24 @@
             <p class="section-kicker">The basics</p>
             <h2 id="profile-title">A bit about me</h2>
           </div>
-          <p class="section-note">No buzzword bingo. Just the essentials.</p>
+          <p class="section-note">Different track. Same curiosity.</p>
         </div>
 
         <div class="profile-grid">
           <article class="info-card">
             <div class="card-icon" aria-hidden="true">⌁</div>
-            <h3>On the journey since</h3>
+            <h3>Joined GitHub</h3>
             <p><span class="highlight">18 July 2024</span><br>Learning, building, breaking, repeating.</p>
           </article>
           <article class="info-card">
             <div class="card-icon" aria-hidden="true">&lt;/&gt;</div>
-            <h3>What I do</h3>
-            <p><span class="highlight">Software Developer</span><br>Turning caffeine and ideas into code.</p>
+            <h3>What I do now</h3>
+            <p><span class="highlight">Drive Trains</span><br>Keeping things moving.</p>
           </article>
           <article class="info-card">
-            <div class="card-icon" aria-hidden="true">✳</div>
-            <h3>Outside the editor</h3>
-            <p>Exploring projects, learning new things, and finding new ways to keep the commit graph busy.</p>
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Still a techie</h3>
+            <p><span class="highlight">2 years studying coding</span><br>Programming got me started. But I ended up driving trains. I still enjoy tech, starting side projects I'll never finish, and keeping GitHub's commit graph unnecessarily busy.</p>
           </article>
         </div>
       </section>
@@ -370,21 +370,21 @@
       <section class="section" id="philosophy" aria-labelledby="philosophy-title">
         <div class="manifesto">
           <div>
-            <p class="section-kicker">My development philosophy</p>
-            <h2 id="philosophy-title">It works on my machine. Ship it? 👀</h2>
-            <div class="code-line">while (curious) { keepBuilding(); }</div>
+            <p class="section-kicker">Career change</p>
+            <h2 id="philosophy-title">From writing code to driving the line. 🚆</h2>
+            <div class="code-line">if (careerChanged) { changeTrack(); }</div>
           </div>
           <p>
-            I reckon the best way to learn is to build something, break it, work out why it broke, and try again.
-            <strong>Every project is a chance to get a little better.</strong> And if a tiny change deserves a commit, who am I to deny it a place in history?
+            I started out building software and solving problems behind a screen. These days, I'm responsible for driving electric trains.
+            <strong>It's a different kind of responsibility, but the curiosity and problem-solving mindset came along for the ride.</strong> I still tinker with code when I get the chance. And yes, I still make commits that probably didn't need to exist.
           </p>
         </div>
       </section>
     </main>
 
     <footer>
-      <div><span class="footer-brand">gebwell.dev</span> &nbsp;·&nbsp; Built with HTML, CSS, and questionable commit habits.</div>
-      <a href="https://github.com/gebwellb" target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a>
+      <div><span class="footer-brand">gebwell.ontrack</span> &nbsp;·&nbsp; Powered by electricity, curiosity, and questionable commits.</div>
+      <a href="https://github.com/GebwellB" target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a>
       <div>© <span id="year">2026</span> Gebwell</div>
     </footer>
   </div>
